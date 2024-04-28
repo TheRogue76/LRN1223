@@ -5,6 +5,7 @@
  * @format
  */
 
+import LottieView from 'lottie-react-native';
 import React from 'react';
 import type {PropsWithChildren} from 'react';
 import {
@@ -72,6 +73,7 @@ function App(): React.JSX.Element {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         <Header />
+        <LottieView source={require('./test.json')} style={{width: 100, height: 200}} autoPlay loop />
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
